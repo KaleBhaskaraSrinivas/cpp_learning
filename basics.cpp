@@ -127,3 +127,23 @@ int main(){
     auto it =mp.find(3)
 }
 
+//Prime Number
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n;
+	cin>>n;
+	bool flag=true;
+	if(n==0 or n==1)
+		flag=false;
+	for(int i=2;i<n/2+1;i++){
+		if(n%i==0)
+			flag=false;
+			break;
+	}
+	if(flag)
+		cout<<"Prime number";
+	else
+		cout<<"Not a prime number";
+}
